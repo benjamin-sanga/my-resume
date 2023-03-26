@@ -2,7 +2,8 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Font } from '@react-pdf/renderer';
 
 // Register font
-Font.register({ family: 'Roboto' });
+const source = 'https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap'
+Font.register({ family: 'Sofia Sans', src: source, fontStyle: 'normal', fontWeight: 'normal' });
 
 // Create styles
 const styles = StyleSheet.create({
@@ -14,6 +15,9 @@ const styles = StyleSheet.create({
     margin: 10,
     padding: 10,
     flexGrow: 1
+  },
+  title: {
+    fontFamily: 'Sofia Sans'
   }
 });
 
