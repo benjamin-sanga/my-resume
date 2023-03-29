@@ -14,22 +14,22 @@ const Template = () => (
           <Text style={styles.title}>FRONT END DEVELOPER</Text>
         <View style={{
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: 'column',
           paddingTop: '7px'
         }}>
           <View style={{
             display: 'flex',
             flexDirection: 'row'}}>
             <Image style={{width: '14px', height: '12px'}} src={TwitterLogo} />
-            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>@yourfavben</Text>
+            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>www.twitter.com/yourfavben</Text>
           </View>
           <View style={{
             display: 'flex',
             flexDirection: 'row',
-            paddingLeft: '10px'
+            paddingTop: '5px'
           }}>
             <Image style={{width: '14px', height: '14px'}} src={LinkedInLogo} />
-            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>Benjamin Sanga</Text>
+            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>www.linkedin.com/in/benjamin-sanga-78b6a3156/</Text>
           </View>
         </View>
       </View>
@@ -44,7 +44,7 @@ const Template = () => (
           top: '0px'
         }}>
           <View>
-            <Text style={{fontSize: '50px', color: '#ACA6A6'}}>C</Text>
+            <Text style={{fontSize: '50px', color: '#ACA6A6'}}>E</Text>
           </View>
           <View style={{
             position: 'absolute',
@@ -52,8 +52,10 @@ const Template = () => (
             top: '15px',
             width: '100px'
             }}>
-            <Text style={{fontSize: '12px', fontWeight: 'light', fontFamily: 'Oswald'}}>Contact</Text>
-            <Text style={{fontSize: '8px', color: '#ACA6A6'}}>benjotaiba@gmail.com</Text>
+            <View style={{paddingTop: '5px'}}>
+              <Text style={{fontSize: '12px', fontWeight: 'light', fontFamily: 'Oswald'}}>Email</Text>
+              <Text style={{fontSize: '8px', color: '#ACA6A6'}}>benjotaiba@gmail.com</Text>
+            </View>
           </View>
         </View>
         <View style={styles.emailBorder}></View>
@@ -180,10 +182,10 @@ const Template = () => (
               <Text style={{fontSize: '14px'}}>Software Developer</Text>
               <View>
                 <Text style={{fontSize: '10px', color: 'grey', width: '400px'}}>
-                  Outsource Global <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2022 - Present
+                  Outsource Global Technologies Limited <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2022 - Present
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; I contributed to WorkNation, a user-friendly platform that simplifies the hiring process for both employers and job seekers.
+                  -&nbsp; Contributed to WorkNation, a user-friendly platform that simplifies the hiring process for both employers and job seekers.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
                   -&nbsp; Collaborated closely with designers, UX/UI experts, and backend developers to ensure that the frontend integrates seamlessly with the backend.
