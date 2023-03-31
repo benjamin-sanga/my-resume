@@ -1,4 +1,4 @@
-import {Document, Page, Text, View, Font, StyleSheet, Image} from '@react-pdf/renderer'
+import {Document, Page, Text, View, Font, StyleSheet, Image, Link} from '@react-pdf/renderer'
 import CVImage from '../src/images/passport.png'
 import TwitterLogo from '../src/images/twitter-logo.png'
 import LinkedInLogo from '../src/images/linkedin.png'
@@ -19,17 +19,21 @@ const Template = () => (
         }}>
           <View style={{
             display: 'flex',
-            flexDirection: 'row'}}>
-            <Image style={{width: '14px', height: '12px'}} src={TwitterLogo} />
-            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>www.twitter.com/yourfavben</Text>
+            flexDirection: 'row'
+          }}>
+            <Image style={{width: '14px', height: '14px'}} src={LinkedInLogo} />
+            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>
+              <Link src="https://www.linkedin.com/in/benjamin-sanga-78b6a3156/" style={{textDecoration: 'none', color: '#0072b1'}}>Benjamin Sanga</Link>
+            </Text>
           </View>
           <View style={{
             display: 'flex',
             flexDirection: 'row',
-            paddingTop: '5px'
-          }}>
-            <Image style={{width: '14px', height: '14px'}} src={LinkedInLogo} />
-            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>www.linkedin.com/in/benjamin-sanga-78b6a3156/</Text>
+            paddingTop: '5px'}}>
+            <Image style={{width: '14px', height: '12px'}} src={TwitterLogo} />
+            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>
+              <Link src="https://www.twitter.com/yourfavben" style={{textDecoration: 'none', color: '#00acee'}}>@yourfavben</Link>
+            </Text>
           </View>
         </View>
       </View>
