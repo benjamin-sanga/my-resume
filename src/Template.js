@@ -2,6 +2,7 @@ import {Document, Page, Text, View, Font, StyleSheet, Image, Link} from '@react-
 import CVImage from '../src/images/passport.png'
 import TwitterLogo from '../src/images/twitter-logo.png'
 import LinkedInLogo from '../src/images/linkedin.png'
+import GitHubLogo from '../src/images/github.png'
 
 const Template = () => (
   <Document>
@@ -21,11 +22,27 @@ const Template = () => (
             display: 'flex',
             flexDirection: 'row'
           }}>
-            <Image style={{width: '14px', height: '14px'}} src={LinkedInLogo} />
-            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>
-              <Link src="https://www.linkedin.com/in/benjamin-sanga-78b6a3156/" style={{textDecoration: 'none', color: '#0072b1'}}>Benjamin Sanga</Link>
-            </Text>
+            <View style={{
+              display: 'flex',
+              flexDirection: 'row'
+            }}>
+              <Image style={{width: '14px', height: '14px'}} src={LinkedInLogo} />
+              <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>
+                <Link src="https://www.linkedin.com/in/benjamin-sanga-78b6a3156/" style={{textDecoration: 'none', color: '#0072b1'}}>Benjamin Sanga</Link>
+              </Text>
+            </View>
+            <View style={{
+              display: 'flex',
+              flexDirection: 'row',
+              paddingLeft: '5px'
+            }}>
+              <Image style={{width: '17px', height: '16px', paddingTop: '-3px'}} src={GitHubLogo} />
+              <Text style={{fontSize: '8px', paddingLeft: '3px'}}>
+                <Link src="https://github.com/benjamin-sanga" style={{textDecoration: 'none', color: '#000'}}>Benjamin Sanga</Link>
+              </Text>
+            </View>
           </View>
+
           <View style={{
             display: 'flex',
             flexDirection: 'row',
@@ -38,7 +55,7 @@ const Template = () => (
         </View>
       </View>
       <Text style={styles.rightBox}></Text>
-      <Image style={styles.image} src={CVImage} />
+      {/*<Image style={styles.image} src={CVImage} />*/}
       <View style={styles.contacts}>
         <View style={{
           position: 'absolute',
@@ -132,6 +149,10 @@ const Template = () => (
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
             Testing and Debugging
           </Text>
+          <Text style={{fontSize: '11px', color: 'grey'}}>
+            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
+            Cross-platform Apps
+          </Text>
         </View>
 
         <View style={{paddingTop: '5px', paddingBottom: '10px'}}>
@@ -146,11 +167,19 @@ const Template = () => (
           </Text>
           <Text style={{fontSize: '11px', color: 'grey'}}>
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            React
+            ReactJS
           </Text>
           <Text style={{fontSize: '11px', color: 'grey'}}>
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Vue
+            VueJS
+          </Text>
+          <Text style={{fontSize: '11px', color: 'grey'}}>
+            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
+            NextJS
+          </Text>
+          <Text style={{fontSize: '11px', color: 'grey'}}>
+            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
+            NodeJS
           </Text>
         </View>
 
@@ -176,44 +205,50 @@ const Template = () => (
             <View>
               <View>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  Highly skilled Frontend Developer with expertise in HTML, CSS, and JavaScript, and proficiency in frontend frameworks like React and Vue. Experienced in creating responsive designs, ensuring cross-browser compatibility, and integrating APIs and third-party services. Knowledgeable in Git and Agile development methodologies. Passionate about crafting visually appealing and user-friendly interfaces, and driven to deliver high-quality solutions that exceed expectations.
+                  Highly skilled Frontend Developer with expertise in HTML, CSS, and JavaScript.
+                  Proficiency in frontend frameworks like React and Vue.
+                  Experienced in creating responsive designs, ensuring cross-browser compatibility,
+                  integrating APIs and third-party services. Knowledgeable in Git and
+                  Agile development methodologies. Passionate about crafting visually appealing
+                  and user-friendly interfaces. Driven to deliver high-quality solutions
+                  that exceed expectations.
                 </Text>
               </View>
             </View>
 
-            <Text style={{fontSize: '20px', paddingTop: '15px'}}>Experience</Text>
-            <View style={{paddingTop: '7px'}}>
+            <Text style={{fontSize: '20px', paddingTop: '10px'}}>Experience</Text>
+            <View style={{paddingTop: '5px'}}>
               <Text style={{fontSize: '14px'}}>Software Developer</Text>
               <View>
-                <Text style={{fontSize: '10px', color: 'grey', width: '400px'}}>
-                  Outsource Global Technologies Limited <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2022 - Present
+                <Text style={{fontSize: '10px', width: '400px'}}>
+                  Outsource Global Technologies Limited, Abuja, Nigeria <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> Remote <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2022 - Present
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Contributed to WorkNation, a user-friendly platform that simplifies the hiring process for both employers and job seekers.
+                  -&nbsp; Contributed to WorkNation, a user-friendly platform that simplifies the hiring process for both employers and job seekers using ReactJS, NextJS, PostgreSQL, TypeORM technologies.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Collaborated closely with designers, UX/UI experts, and backend developers to ensure that the frontend integrates seamlessly with the backend.
+                  -&nbsp; Collaborated closely with designers, UX/UI experts, and backend developers to ensure that the frontend integrates seamlessly with the backend, leveraging JavaScript technology.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Ensure that the web applications and websites are optimized for performance and accessibility.
+                  -&nbsp; Ensured that the web applications and websites are optimized for performance and accessibility by using the core web vitals metrics.
                 </Text>
               </View>
             </View>
 
-            <View style={{paddingTop: '15px'}}>
+            <View style={{paddingTop: '10px'}}>
               <Text style={{fontSize: '14px'}}>Software Engineer</Text>
               <View>
-                <Text style={{fontSize: '10px', color: 'grey', width: '200px'}}>
-                  NetAccess Communications <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2019 - Present
+                <Text style={{fontSize: '10px', width: '400px'}}>
+                  NetAccess Communications, Jos, Nigeria <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> Hybrid <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2019 - Present
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Worked to ensure a positive and hassle-free user experience, for customers, interns, and staff.
+                  -&nbsp; Designed and implemented an Internet of Things (IoT) device using a microcontroller programmed with Python, enabling control and monitoring of home appliances through a mobile app. Received multiple recognitions for the IoT device
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Helped to provide excellent customer service at all times by building software on-demand for customers.
+                  -&nbsp; Worked to ensure a positive and hassle-free user experience, for customers, interns, and staff by automating processes with Python and web applications with JavaScript.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Identified and maximized scale opportunities, and increased customer retention rates.
+                  -&nbsp; Designed, developed and deployed software with ReactJS, NodeJS, and Python for customers which increased efficiency and retention rates.
                 </Text>
               </View>
             </View>
@@ -223,9 +258,9 @@ const Template = () => (
 
       </View>
 
-      <Text style={styles.pageNumber} render={({ pageNumber, totalPages }) => (
-        `${pageNumber} / ${totalPages}`
-      )} fixed />
+      {/*<Text style={styles.pageNumber} render={({ pageNumber, totalPages }) => (*/}
+      {/*  `${pageNumber} / ${totalPages}`*/}
+      {/*)} fixed />*/}
     </Page>
 
     <Page style={styles.body}>
@@ -304,7 +339,7 @@ const Template = () => (
             </View>
           </View>
 
-          <View style={{paddingTop: '10px'}}>
+          <View style={{paddingTop: '5px'}}>
             <Text style={{fontSize: '14px'}}>Software Engineering</Text>
             <View>
               <Text style={{fontSize: '10px', color: 'grey', width: '200px'}}>
