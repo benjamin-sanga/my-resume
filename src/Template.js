@@ -10,9 +10,8 @@ const Template = () => (
       <Text style={styles.topLeftBox}></Text>
       <View style={styles.leftLine}></View>
       <View style={styles.nameView}>
-        <Text style={styles.fullname}>Benjamin</Text>
-        <Text style={styles.fullname}>Sanga</Text>
-          <Text style={styles.title}>FRONT END DEVELOPER</Text>
+        <Text style={styles.fullname}>Benjamin Sanga</Text>
+        <Text style={styles.title}>FRONT END DEVELOPER</Text>
         <View style={{
           display: 'flex',
           flexDirection: 'column',
@@ -20,38 +19,42 @@ const Template = () => (
         }}>
           <View style={{
             display: 'flex',
-            flexDirection: 'row'
+            flexDirection: 'column'
           }}>
             <View style={{
               display: 'flex',
-              flexDirection: 'row'
+              flexDirection: 'row',
+              paddingTop: '7px',
+              paddingLeft: '3px'
             }}>
               <Image style={{width: '14px', height: '14px'}} src={LinkedInLogo} />
-              <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>
+              <Text style={{fontSize: '10px', color: '#ACA6A6', paddingLeft: '3px'}}>
                 <Link src="https://www.linkedin.com/in/benjamin-sanga-78b6a3156/" style={{textDecoration: 'none', color: '#0072b1'}}>Benjamin Sanga</Link>
               </Text>
             </View>
             <View style={{
               display: 'flex',
               flexDirection: 'row',
-              paddingLeft: '5px'
+              paddingTop: '7px'
             }}>
-              <Image style={{width: '17px', height: '16px', paddingTop: '-3px'}} src={GitHubLogo} />
-              <Text style={{fontSize: '8px', paddingLeft: '3px'}}>
+              <Image style={{width: '18px', height: '18px'}} src={GitHubLogo} />
+              <Text style={{fontSize: '10px', paddingLeft: '3px'}}>
                 <Link src="https://github.com/benjamin-sanga" style={{textDecoration: 'none', color: '#000'}}>Benjamin Sanga</Link>
+              </Text>
+            </View>
+            <View style={{
+              display: 'flex',
+              flexDirection: 'row',
+              paddingTop: '7px',
+              paddingLeft: '3px'
+            }}>
+              <Image style={{width: '14px', height: '12px'}} src={TwitterLogo} />
+              <Text style={{fontSize: '10px', color: '#ACA6A6', paddingLeft: '3px', paddingTop: '-3px'}}>
+                <Link src="https://www.twitter.com/yourfavben" style={{textDecoration: 'none', color: '#00acee'}}>@yourfavben</Link>
               </Text>
             </View>
           </View>
 
-          <View style={{
-            display: 'flex',
-            flexDirection: 'row',
-            paddingTop: '5px'}}>
-            <Image style={{width: '14px', height: '12px'}} src={TwitterLogo} />
-            <Text style={{fontSize: '8px', color: '#ACA6A6', paddingLeft: '3px'}}>
-              <Link src="https://www.twitter.com/yourfavben" style={{textDecoration: 'none', color: '#00acee'}}>@yourfavben</Link>
-            </Text>
-          </View>
         </View>
       </View>
       <Text style={styles.rightBox}></Text>
@@ -128,35 +131,6 @@ const Template = () => (
         <Text style={{fontSize: '20px'}}>Skills</Text>
 
         <View style={{paddingTop: '10px', paddingBottom: '10px'}}>
-          <Text style={{fontSize: '14px', paddingBottom: '5px'}}>Professional</Text>
-          <Text style={{fontSize: '11px', color: 'grey'}}>
-            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Responsive design
-          </Text>
-          <Text style={{fontSize: '11px', color: 'grey'}}>
-            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Version Control
-          </Text>
-          <Text style={{fontSize: '11px', color: 'grey'}}>
-            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Collaboration
-          </Text>
-          <Text style={{fontSize: '11px', color: 'grey'}}>
-            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Performance Optimization
-          </Text>
-          <Text style={{fontSize: '11px', color: 'grey'}}>
-            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Testing and Debugging
-          </Text>
-          <Text style={{fontSize: '11px', color: 'grey'}}>
-            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            Cross-platform Apps
-          </Text>
-        </View>
-
-        <View style={{paddingTop: '5px', paddingBottom: '10px'}}>
-          <Text style={{fontSize: '14px', paddingBottom: '5px'}}>Expertise</Text>
           <Text style={{fontSize: '11px', color: 'grey'}}>
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
             HTML/CSS
@@ -167,11 +141,19 @@ const Template = () => (
           </Text>
           <Text style={{fontSize: '11px', color: 'grey'}}>
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            ReactJS
+            Git/GitHub
           </Text>
           <Text style={{fontSize: '11px', color: 'grey'}}>
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
-            VueJS
+            Jira
+          </Text>
+          <Text style={{fontSize: '11px', color: 'grey'}}>
+            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
+            Jest
+          </Text>
+          <Text style={{fontSize: '11px', color: 'grey'}}>
+            <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
+            ReactJS
           </Text>
           <Text style={{fontSize: '11px', color: 'grey'}}>
             <Text style={{verticalAlign: 'super'}}>.&nbsp;</Text>
@@ -216,7 +198,7 @@ const Template = () => (
               </View>
             </View>
 
-            <Text style={{fontSize: '20px', paddingTop: '10px'}}>Experience</Text>
+            <Text style={{fontSize: '20px', paddingTop: '10px'}}>Professional Experience</Text>
             <View style={{paddingTop: '5px'}}>
               <Text style={{fontSize: '14px'}}>Software Developer</Text>
               <View>
@@ -224,31 +206,22 @@ const Template = () => (
                   Outsource Global Technologies Limited, Abuja, Nigeria <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> Remote <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2022 - Present
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Contributed to WorkNation, a user-friendly platform that simplifies the hiring process for both employers and job seekers using ReactJS, NextJS, PostgreSQL, TypeORM technologies.
+                  As a frontend developer, I had the opportunity to work alongside a talented team of seven software developers,
+                  collaborating on the development of three unique software projects. Over a span of six months,
+                  the project I actively contributed to experienced an exceptional growth of 300%,
+                  showcasing the remarkable achievements of our group.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Collaborated closely with designers, UX/UI experts, and backend developers to ensure that the frontend integrates seamlessly with the backend, leveraging JavaScript technology.
+                  -&nbsp; Successfully implemented the frontend for WorkNation, a user-friendly platform that streamlines the hiring process for both employers and job seekers. Leveraged technologies such as ReactJS, NextJS, PostgreSQL, and TypeORM to create an intuitive and efficient experience.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Ensured that the web applications and websites are optimized for performance and accessibility by using the core web vitals metrics.
-                </Text>
-              </View>
-            </View>
-
-            <View style={{paddingTop: '10px'}}>
-              <Text style={{fontSize: '14px'}}>Software Engineer</Text>
-              <View>
-                <Text style={{fontSize: '10px', width: '400px'}}>
-                  NetAccess Communications, Jos, Nigeria <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> Hybrid <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2019 - Present
+                  -&nbsp; Fostered close collaboration with designers, UI/UX experts, and backend developers to guarantee seamless integration between the frontend and backend components. Employed JavaScript technology to facilitate smooth communication and synchronization across the entire software solution.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Designed and implemented an Internet of Things (IoT) device using a microcontroller programmed with Python, enabling control and monitoring of home appliances through a mobile app. Received multiple recognitions for the IoT device
+                  -&nbsp; Ensured optimal performance and accessibility of web applications and websites by prioritizing core web vitals metrics.
                 </Text>
                 <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Worked to ensure a positive and hassle-free user experience, for customers, interns, and staff by automating processes with Python and web applications with JavaScript.
-                </Text>
-                <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
-                  -&nbsp; Designed, developed and deployed software with ReactJS, NodeJS, and Python for customers which increased efficiency and retention rates.
+                  -&nbsp; Implemented strategies and optimizations to enhance loading speed, responsiveness, and user experience, guaranteeing that the digital solutions met high standards of performance and accessibility.
                 </Text>
               </View>
             </View>
@@ -257,10 +230,6 @@ const Template = () => (
         </View>
 
       </View>
-
-      {/*<Text style={styles.pageNumber} render={({ pageNumber, totalPages }) => (*/}
-      {/*  `${pageNumber} / ${totalPages}`*/}
-      {/*)} fixed />*/}
     </Page>
 
     <Page style={styles.body}>
@@ -299,18 +268,55 @@ const Template = () => (
         left: '230px',
         top: '0px'
       }}>
-        <Text style={{fontSize: '20px', paddingTop: '20px'}}>Education</Text>
 
         <View style={{paddingTop: '5px', paddingBottom: '10px'}}>
 
+          <View style={{paddingTop: '10px'}}>
+            <Text style={{fontSize: '14px'}}>Software Engineer</Text>
+            <View>
+              <Text style={{fontSize: '10px', width: '400px'}}>
+                NetAccess Communications, Jos, Nigeria <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> Hybrid <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2019 - Present
+              </Text>
+              <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
+                Lead the software development team and improved the development timeline while leveraging available talents and using agile development on projects.
+              </Text>
+              <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
+                -&nbsp; Designed and implemented a Python-programmed Internet of Things (IoT) device using a microcontroller, enabling remote control and monitoring of home appliances via a mobile app.
+              </Text>
+              <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
+                -&nbsp; Ensured a seamless and user-friendly experience for all stakeholders by implementing automatedsolutions and web applications using Python and JavaScript.
+              </Text>
+            </View>
+          </View>
+
+          <Text style={{fontSize: '20px', paddingTop: '20px'}}>Projects</Text>
+          <View style={{paddingTop: '10px'}}>
+            <Text style={{fontSize: '14px'}}>Software Engineer</Text>
+            <View>
+              <Text style={{fontSize: '10px', width: '400px'}}>
+                Ajokudi <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2019 - Present
+              </Text>
+              <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
+                Successfully initiated the concept and development of a platform serving as a collective fundraising avenue, enabling individuals to pool resources and raise funds collaboratively.&nbsp;
+                <Text style={{fontSize: '10px'}}>
+                  <Link src="https://ajokudi-frontend.vercel.app/" style={{textDecoration: 'underline', color: 'grey'}}>Link</Link>
+                </Text>
+              </Text>
+              <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
+                -&nbsp; Implemented a robust system that ensures all participants in the fundraising circle remain informed and updated on the progress of the campaigns.
+              </Text>
+              <Text style={{fontSize: '10px', width: '300px', color: 'grey'}}>
+                -&nbsp; Successfully deployed and hosted the platform on Heroku initially, and later transitioned to Vercel for frontend hosting and Render for backend hosting, optimizing performance and scalability.
+              </Text>
+            </View>
+          </View>
+
+          <Text style={{fontSize: '20px', paddingTop: '20px'}}>Education</Text>
           <View>
             <Text style={{fontSize: '14px'}}>Computer Science</Text>
             <View>
               <Text style={{fontSize: '10px', color: 'grey', width: '200px'}}>
                 University of Jos <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> 2017 - 2021
-              </Text>
-              <Text style={{fontSize: '10px', width: '200px', color: 'grey'}}>
-                -&nbsp; In view. On course to graduate with high honors.
               </Text>
             </View>
           </View>
@@ -342,7 +348,7 @@ const Template = () => (
           <View style={{paddingTop: '5px'}}>
             <Text style={{fontSize: '14px'}}>Software Engineering</Text>
             <View>
-              <Text style={{fontSize: '10px', color: 'grey', width: '200px'}}>
+              <Text style={{fontSize: '10px', color: 'grey', width: '400px'}}>
                 New Horizons Computer Learning Centers <Text style={{color: '#000000'}}>&nbsp;&nbsp;|&nbsp;&nbsp;</Text> Jan, 2016 - Apr, 2016
               </Text>
             </View>
@@ -410,7 +416,7 @@ const styles = StyleSheet.create({
     // textAlign: 'left'
   },
   title: {
-    fontSize: 11,
+    fontSize: 14,
     marginBottom: 2,
     color: '#5B5A5A'
   },
